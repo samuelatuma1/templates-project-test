@@ -14,21 +14,21 @@ import hashlib
 
 
 # Connect to database
-import pymongo
-try:
+# import pymongo
+# try:
     
-    mongo = pymongo.MongoClient("mongodb+srv://atuma:mystrongpassword@cluster0.k7wdg.mongodb.net/?retryWrites=true&w=majority")
-    db = mongo.templates
-    mongo.server_info() # Trigger exception if we cannot connect
-    print("Connected")
+#     mongo = pymongo.MongoClient("mongodb+srv://atuma:mystrongpassword@cluster0.k7wdg.mongodb.net/?retryWrites=true&w=majority")
+#     db = mongo.templates
+#     mongo.server_info() # Trigger exception if we cannot connect
+#     print("Connected")
     
-except Exception as err:
-    print(err)
+# except Exception as err:
+#     print(err)
 
 #############################################################################
 @app.route("/", methods=['GET'])
 def index():
-    return "Hello world!!"
+    return "Hello world!"
 # @app.route("/register", methods = ['GET', "POST"])
 # def create_user():
 #     try:
