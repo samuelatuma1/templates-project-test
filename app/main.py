@@ -18,7 +18,7 @@ import pymongo
 try:
     
     
-    mongo = pymongo.MongoClient("mongodb+srv://atuma:mystrongpassword@cluster0.k7wdg.mongodb.net/?retryWrites=true&w=majority", serverSelectionTimeoutMS=45000)
+    mongo = pymongo.MongoClient("mongodb+srv://atuma:mystrongpassword@cluster0.k7wdg.mongodb.net/?retryWrites=true&w=majority", serverSelectionTimeoutMS=25000)
     db = mongo.templates
     mongo.server_info() # Trigger exception if we cannot connect
     print("Connected")
