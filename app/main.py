@@ -93,7 +93,7 @@ def check_for_token(func):
     global app
     @wraps(func)
     def wrapped(*args, **kwargs):
-        auth = request.headers['authorization']
+        auth = request.headers.get('authorization')
         if not auth:
             return jsonify({"message" : "Missing token"}), 403
         
